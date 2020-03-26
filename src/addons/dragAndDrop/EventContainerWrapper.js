@@ -136,6 +136,8 @@ class EventContainerWrapper extends React.Component {
     let selector = (this._selector = new Selection(() =>
       node.closest('.rbc-time-view')
     ))
+    console.log(selector, 'selector');
+    
 
     selector.on('beforeSelect', point => {
       const { dragAndDropAction } = this.context.draggable
@@ -163,6 +165,8 @@ class EventContainerWrapper extends React.Component {
       if (!this.context.draggable.onDropFromOutside) return
 
       const bounds = getBoundsForNode(node)
+      console.log(bounds, 'bounds');
+      
 
       if (!pointInColumn(bounds, point)) return
 
