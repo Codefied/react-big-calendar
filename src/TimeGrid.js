@@ -284,6 +284,7 @@ export default class TimeGrid extends Component {
     const totalMillis = dates.diff(max, min)
 
     this._scrollRatio = diffMillis / totalMillis
+    console.warn(min, max, this._scrollRation)
   }
 
   checkOverflow = () => {
