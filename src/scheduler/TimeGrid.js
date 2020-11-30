@@ -80,6 +80,7 @@ export default class TimeGrid extends Component {
       !dates.eq(nextProps.scrollToDay, scrollToDay, 'minute')
     ) {
       this.calculateScroll(nextProps)
+      this.applyScroll()
     }
   }
 
