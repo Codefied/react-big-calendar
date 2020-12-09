@@ -6335,6 +6335,8 @@ var TimeGrid$1 =
     }
 
     _proto.applyScroll = function applyScroll() {
+      var _this6 = this
+
       if (this._scrollRatio) {
         var content = this.contentRef.current
         var gutterWidth = this.props.width || this.state.gutterWidth
@@ -6343,6 +6345,9 @@ var TimeGrid$1 =
           content.scrollLeft =
             (content.scrollWidth - gutterWidth) * this._scrollRatio // Only do this once
 
+          setTimeout(function() {
+            _this6._scrollRatio = null
+          }, 500)
           this.props.onScrolledToDay(this.props.scrollToDay)
         }
       }

@@ -319,6 +319,9 @@ export default class TimeGrid extends Component {
         content.scrollLeft =
           (content.scrollWidth - gutterWidth) * this._scrollRatio
         // Only do this once
+        setTimeout(() => {
+          this._scrollRatio = null
+        }, 500)
         this.props.onScrolledToDay(this.props.scrollToDay)
       }
     }
