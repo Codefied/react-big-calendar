@@ -47,7 +47,7 @@ function TimeGridEvent(props) {
           ...userProps.style,
           left: stringifyPercent(top),
           width: stringifyPercent(height),
-          height: stringifyPercent(width),
+          height: `calc(${stringifyPercent(width)} - 2px)`,
           top: stringifyPercent(xOffset),
         }}
         title={

@@ -3284,7 +3284,7 @@ function TimeGridEvent(props) {
           }),
           (_extends2[rtl ? 'right' : 'left'] = stringifyPercent(xOffset)),
           (_extends2.width = stringifyPercent(width)),
-          (_extends2.height = stringifyPercent(height)),
+          (_extends2.height = 'calc(' + stringifyPercent(height) + ' - 2px)'),
           _extends2)
         ),
         title: tooltip
@@ -5204,7 +5204,7 @@ function TimeGridEvent$1(props) {
         style: _extends({}, userProps.style, {
           left: stringifyPercent$1(top),
           width: stringifyPercent$1(height),
-          height: stringifyPercent$1(width),
+          height: 'calc(' + stringifyPercent$1(width) + ' - 2px)',
           top: stringifyPercent$1(xOffset),
         }),
         title: tooltip
