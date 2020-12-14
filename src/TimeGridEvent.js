@@ -49,7 +49,7 @@ function TimeGridEvent(props) {
           top: stringifyPercent(top),
           [rtl ? 'right' : 'left']: stringifyPercent(xOffset),
           width: stringifyPercent(width),
-          height: `calc(${stringifyPercent(height)} - 1px)`,
+          height: `calc(${stringifyPercent(height)} - 2px)`,
         }}
         title={
           tooltip
