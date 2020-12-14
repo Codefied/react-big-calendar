@@ -15410,8 +15410,8 @@
           onDoubleClick: onDoubleClick,
           style: _extends({}, userProps.style, {
             left: stringifyPercent$1(top),
-            width: stringifyPercent$1(height),
-            height: 'calc(' + stringifyPercent$1(width) + ' - 2px)',
+            width: 'calc(' + stringifyPercent$1(height) + ' - 1px)',
+            height: stringifyPercent$1(width),
             top: stringifyPercent$1(xOffset),
           }),
           title: tooltip
