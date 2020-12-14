@@ -3284,7 +3284,7 @@ function TimeGridEvent(props) {
           }),
           (_extends2[rtl ? 'right' : 'left'] = stringifyPercent(xOffset)),
           (_extends2.width = stringifyPercent(width)),
-          (_extends2.height = 'calc(' + stringifyPercent(height) + ' - 2px)'),
+          (_extends2.height = 'calc(' + stringifyPercent(height) + ' - 1px)'),
           _extends2)
         ),
         title: tooltip
