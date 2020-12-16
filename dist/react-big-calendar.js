@@ -16557,6 +16557,7 @@
             content.scrollLeft =
               (content.scrollWidth - gutterWidth) * this._scrollRatio // Only do this once
 
+            this._scrollRatio = null
             this.props.onScrolledToDay(this.props.scrollToDay)
           }
         }
